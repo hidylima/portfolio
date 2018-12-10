@@ -1,0 +1,190 @@
+.main-footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 5% 5px;
+    position: relative;
+    top: -5px;
+    z-index: 1;
+    background-color: #6048ff;
+}
+
+.main-footer .header {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-footer .header>.title,
+.main-footer .header>.subtitle {
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+}
+
+.main-footer .header>.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-footer .header>.subtitle {
+    font-size: 1.4rem;
+}
+
+.main-footer .boxs {
+    padding: 50px;
+    display: block;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main-footer .boxs .box {
+    flex: 0 1 auto;
+    max-width: 340px;
+    margin: 10px;
+    margin: 0 auto;
+}
+
+.main-footer .boxs .box>.title {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main-footer .boxs .box>.subtitle {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    text-align: left;
+}
+
+@media all and (max-width: 768px) {
+    .main-footer .boxs {
+        flex-flow: column wrap;
+        margin: 0 0;
+    }
+}
+
+.main-footer .footer {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+.main-footer .footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.main-footer .footer a:hover {}
+
+.main-footer .footer .wrapper {
+    margin: 10px auto;
+    padding: 10px;
+
+    max-width: 1100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+
+.main-footer .wrapper .logo {
+    color: white;
+    display: block;
+
+    margin-right: 20px;
+}
+
+.main-footer .logo .triangle {
+    display: inline-block;
+    vertical-align: baseline;
+
+    width: 0;
+    height: 0;
+
+    border-bottom: 23px solid white;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+}
+
+.main-footer .logo .text {
+    display: inline-block;
+    font-size: 26px;
+}
+
+
+.main-footer .footer .nav {
+    margin: 0 100px 0 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.main-footer .footer .nav .item {
+    height: 25px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.main-footer .link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-footer .link .icon svg {
+    fill: currentColor;
+}
+
+.main-footer .footer .right .social {
+    text-align: right;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.main-footer .footer .right .social .link {
+    padding-right: 8px;
+}
+
+.footer .right .social a:nth-last-of-type(n + 2) {
+    border-right: 1px solid #fff
+}
+
+#clouds path {
+    fill: #6048ff;
+    stroke: #6048ff;
+   
+}
+
+@media all and (max-width: 750px) {
+    .main-footer .footer .wrapper {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .main-footer .footer .mini-nav {
+        display: flex;
+    }
+
+    .main-footer .footer .logo {
+        margin: 10px;
+    }
+
+    .main-footer .footer .nav {
+        margin: 15px auto;
+    }
+
+    .main-footer .footer .nav .item {
+        padding-right: 15px;
+    }
+
+    .main-footer .footer .right .social {
+        text-align: center;
+    }
+}

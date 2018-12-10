@@ -1,0 +1,161 @@
+.call-form {
+    background-color: #fffdfdd2;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 5% 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.call-form .title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.call-form .subtitle {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    letter-spacing: .05rem;
+    font-weight: normal;
+    color: #6E6E6E;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.call-form .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.459);
+    margin: 0 auto;
+    padding: 30px 20px 40px 20px;
+    position: relative;
+}
+
+.call-form .label {
+    display: block;
+    width: 80%;
+    position: relative;
+    margin: 0 auto 30px auto;
+
+
+}
+
+.call-form label:focus-within:after {
+    transform: scaleX(1);
+}
+
+.call-form .label::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    background-color: blue;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 400ms cubic-bezier(0.24, 0.39, 0.81, 1.27);
+}
+
+.call-form .titleForm {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.call-form .titleForm:before {
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.call-form .input {
+    display: block;
+    width: 100%;
+    height: 3em;
+    margin: 0 auto;
+    padding: 5px;
+    border-bottom: 2px solid blueviolet;
+    background-color: transparent;
+    font-weight: bold;
+    resize: none;
+}
+
+.call-form .input.-textarea {}
+
+.call-form .input::selection {
+    background-color: blue;
+}
+
+.call-form .input:focus,
+.call-form .input:hover {
+    border-bottom-color: blue;
+}
+
+
+.call-form .button {
+    display: inline-block;
+    width: 150px;
+    padding: 12px 12px;
+    margin: 8px 0 auto;
+    border: 2px solid #78788c;
+    border-radius: 25px;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 18px;
+    right: 13%;
+}
+
+.call-form .button:hover {
+    background: #78788c;
+    color: #fff;
+}
+
+@media screen and (max-width: 971px) {
+
+    .call-form .form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .call-form {
+        padding-top: 0;
+    }
+
+    .call-form {
+        padding-top: 0;
+    }
+
+    .call-form .form {
+        width: 86%;
+        padding: 30px 20px 40px 20px;
+    }
+
+    .call-form .button {
+        position: static;
+        margin: 0 auto;
+    }
+
+}

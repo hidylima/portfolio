@@ -1,0 +1,17 @@
+/* conteiner */
+.container {
+    padding: 0 8vw;
+    width: 100%;
+    margin: 0 auto;
+}
+.row{
+    display: inline-block;
+}
+
+
+/* // --smallphone: 320px;
+// --phone: 480px;
+// --minitablet: 640px;
+// --tablet: 960px;
+// --laptop: 1024px;
+// --desktop: 1280px; */

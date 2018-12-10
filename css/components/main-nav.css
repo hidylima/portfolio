@@ -1,0 +1,200 @@
+.main-nav>.menuToogle {
+    display: none;
+    visibility: hidden;
+    z-index: -999;
+}
+
+.main-nav>.list {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav>.list>.item {
+    margin: var(--spacing-small);
+    color: #4a4a4a;
+}
+
+.main-nav .active,
+.main-nav .active:link,
+.main-nav .active:visited {
+    text-decoration: none;
+    font-size: 1.4rem;
+    position: relative;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    color: #4a4a4a;
+    opacity: .8;
+}
+
+.main-nav .active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    bottom: -5px;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 1s;
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    background-color: #4a4a4a;;
+}
+
+.main-nav .active.-active,
+.main-nav .active:hover,
+.main-nav .active:active {
+    color: #4a4a4a;;
+    opacity: 1;
+}
+
+.main-nav .active.--active::before,
+.main-nav .active:hover::before,
+.main-nav .active:active::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 768px) {
+
+    /* .main-nav > .list {
+        display: none;
+    } */
+    .main-nav .label {
+        width: 4.5rem;
+        height: 4.5rem;
+        position: absolute;
+        right: 2rem;
+        top: 1.8rem;
+        cursor: pointer;
+    }
+    
+
+    .main-nav .span {
+        width: 3rem;
+        height: 0.3rem;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        background-color: #555555;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 0.3rem;
+        transition: all 0.3s;
+    }
+    .main-nav .label:hover .span,
+    .main-nav .label:hover .span:before,
+    .main-nav .label:hover .span:after {
+        width: 4rem;
+    }
+
+    .main-nav .span::before,
+    .main-nav .span::after {
+        content: "";
+        width: 3rem;
+        height: 0.3rem;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        background-color: #555555;
+        border-radius: 0.3rem;
+        transition: all 0.3s;
+    }
+
+    .main-nav .span::before {
+        top: 10px;
+    }
+
+    .main-nav .span::after {
+        bottom: 10px;
+    }
+
+    .menuToogle:checked~.label .span {
+        background-color: transparent;
+    }
+
+    .menuToogle:checked~.label .span:before {
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        background-color: #ffffff;
+        box-shadow: 0 0 0.4rem rgba(99, 49, 163, 0.9);
+        top: 0;
+    }
+
+    .menuToogle:checked~.label .span::after {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+        background-color: #ffffff;
+        box-shadow: 0 0 0.4rem rgba(99, 49, 163, 0.9);
+        bottom: 0;
+    }
+
+    .menuToogle:checked~.list {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .menuToogle:checked~.list .item {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .main-nav .list {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        background-color:  rgba(99, 49, 163, 1);
+        opacity: 0;
+    }
+
+    .main-nav .item {
+        margin: 0 1.5rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        opacity: 0;
+        color: #ffffff;
+    }
+
+    .main-nav .item:first-child {
+        padding-top: 5rem;
+    }
+
+    .main-nav .item:last-child {
+        padding-bottom: 4rem;
+    }
+
+    .main-nav .active,
+    .main-nav .active:link,
+    .main-nav .active:visited{
+        color: #ffffff;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .main-nav .active::before {
+
+        background-color: #ffffff;
+    }
+    
+    .main-nav .active.-active,
+    .main-nav .active:hover,
+    .main-nav .active:active {
+        color: #ffffff;
+        opacity: 1;
+    }
+
+
+}

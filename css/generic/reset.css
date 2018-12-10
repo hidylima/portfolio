@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1;
+
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+::-ms-clear,
+::-ms-reveal {
+  display: none;
+}
+
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button,
+::-webkit-search-cancel-button,
+[type=search] {
+  appearance: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input, textarea {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}

@@ -1,0 +1,116 @@
+.call-skills {
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    width: 100%;
+    max-width: 1280px;
+    padding: 50px 5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.call-skills>.title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.call-skills>.subtitle {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    letter-spacing: .05rem;
+    font-weight: normal;
+    color: #6E6E6E;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.call-skills>.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.call-skills .skill {
+    flex: 1 1 25%;
+}
+
+.call-skills .bar {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 10px solid #eee;
+
+    margin-right: 25px;
+    margin-left: 25px;
+    box-shadow: 0 0 20px 0 rgba(170, 170, 170, 0.16);
+    background-color: #ffffff;
+}
+
+.call-skills .bar.-html {
+    border-bottom-color: #f5317f;
+    border-right-color: #f5317f;
+    border-top-color: #f5317f;
+}
+
+.call-skills .bar.-css {
+    border-bottom-color: #b122e5;
+    border-left-color: #b122e5;
+    border-top-color: #b122e5;
+}
+
+.call-skills .bar.-javascript {
+    border-right-color: #ff8359;
+    border-top-color: #ff8359;
+}
+
+.call-skills .bar.-nodejs {
+    border-top-color: #2cbfc7;
+}
+
+.call-skills .description {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    font-weight: normal;
+
+}
+
+.call-skills .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #5d5d5d;
+}
+
+@media (max-width: 802px) {
+    .call-skills .skill {
+        flex: 1 1 50%;
+    }
+
+    .call-skills .bar {
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+    .call-skills .description{  
+        margin-bottom: 40px;
+    }
+}

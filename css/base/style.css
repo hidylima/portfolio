@@ -1,0 +1,23 @@
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+  height: autto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: 0;
+}

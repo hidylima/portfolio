@@ -1,0 +1,18 @@
+:root {
+    
+    --color-zero: #fff;
+    --color-first: ##A0D334;
+    --color-second: #3a4042;
+    --color-second-light: rgba(58, 64, 66, 0.4);
+    --color-third: #fffcee;
+
+    --spacing-container-top: 7.389vh;
+    --spacing-container-left: 9.6vw;
+    --spacing-container-right: 9.6vw;
+    --spacing-container-bottom: 2.71vh;
+
+    --spacing-very-small: 6px;
+    --spacing-small: 20px;
+    --spacing-big: 70px;
+    --spacing-very-big: 140px;
+}

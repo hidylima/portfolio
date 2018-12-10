@@ -1,0 +1,15 @@
+.main-logo>.title {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 0.5em;
+    color: #a0d334;
+    font-weight: bold;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .main-logo>.title {
+        width: 50px;
+        font-size: 2rem;
+    }
+  }
