@@ -2,8 +2,11 @@
     position: relative;
     left: 0;
     top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 95vh;
     background-image: linear-gradient(to right, rgba(121, 56, 218, 0.50), rgba(96, 72, 255, 0.50));
 }
 
@@ -19,13 +22,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url('/img/header_bg.png');
+    background-image: url('../../img/header_bg.png');
 }
 
 .wrap-featured>.wrapper {
     position: relative;
-    top: 40%;
-    left: 60%;
+
     width: 100%;
     max-width: 400px;
 }
