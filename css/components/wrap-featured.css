@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 95vh;
+    height: 99vh;
     background-image: linear-gradient(to right, rgba(121, 56, 218, 0.50), rgba(96, 72, 255, 0.50));
 }
 
@@ -27,21 +27,22 @@
 
 .wrap-featured>.wrapper {
     position: relative;
-
     width: 100%;
-    max-width: 400px;
+    padding: 100px;
+    text-align: center;
 }
 
 .wrap-featured>.wrapper>.title {
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 1.4;
+    letter-spacing: 1px;
     color: #ffffff;
     margin-bottom: 5px;
 }
 
 .wrap-featured>.wrapper>.subtitle {
-    font-size: 1.8rem;
+    font-size: 1.8em;
     color: #ffffff;
     margin-bottom: 5px;
 

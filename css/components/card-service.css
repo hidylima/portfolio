@@ -2,21 +2,19 @@
     display: flex;
     flex: 0 0 60%;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .card-service.-service {
     flex: 0 0 40%;
-    justify-content: flex-start;
+    height: 50%;
 }
 
 .card-service>.item {
     position: relative;
-
     max-width: 400px;
     width: 100%;
     padding: 30px;
-
     background-color: transparent;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -32,11 +30,11 @@
 
 }
 
-.card-service>.logo {
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    margin-left: 10px;
+.card-service >.item > .logo {
+    position: relative;
+    display: block;
+    margin: 0 auto 15px auto;
+    text-align: center;
 }
 
 .card-service>.item>.title {
@@ -44,18 +42,18 @@
     font-weight: bolder;
     color: #4A4A4A;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .card-service>.item>.title.-card {
     font-size: 1.6rem;
     font-weight: normal;
     margin-bottom: 8px;
-    margin-left: 30px;
 }
 
-.card-service>.item>.title.-card~.description {
+/* .card-service>.item>.title.-card~.description {
     margin-left: 30px;
-}
+} */
 
 .card-service>.item>.description {
     font-size: 1.4rem;
@@ -64,6 +62,7 @@
     font-weight: normal;
     color: #6E6E6E;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 

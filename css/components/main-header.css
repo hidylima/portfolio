@@ -8,18 +8,20 @@
     margin-left: auto;
     margin-right: auto;
 
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
 
-    background-color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 1s ease-in-out;
+    background-color: #fff;
+
 }
 
 .main-header.-active {
     position: fixed;
     height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all .4s ease-in;
 }
