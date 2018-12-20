@@ -24,29 +24,29 @@
     DOM (Document Object Model) - document -> documento
 
 */
-"use stric";
+// "use stric";
 
-const $formCollab = window.document.querySelector(".form-collab");
-const $label = $formCollab.querySelector(".label");
-const $input = $formCollab.querySelector(".input");
-const $tags = $formCollab.querySelector(".tags");
+// const $formCollab = window.document.querySelector(".form-collab");
+// const $label = $formCollab.querySelector(".label");
+// const $input = $formCollab.querySelector(".input");
+// const $tags = $formCollab.querySelector(".tags");
 
-const focusAndBlur = () => $label.classList.toggle("-focus");
-const newTag = value => {
-    const $tag = document.createElement("span");
-    const template = `
-      <input class="tagInput" id="${value}" type="checkbox" checked>
-      <label class="tag" for="${value}">${value}</label>
-    `;
-    $tag.innerHTML = template;
+// const focusAndBlur = () => $label.classList.toggle("-focus");
+// const newTag = value => {
+//     const $tag = document.createElement("span");
+//     const template = `
+//       <input class="tagInput" id="${value}" type="checkbox" checked>
+//       <label class="tag" for="${value}">${value}</label>
+//     `;
+//     $tag.innerHTML = template;
 
-    return $tag;
-};
+//     return $tag;
+// };
 
-$formCollab.addEventListener("submit", event => event.preventDefault());
+// $formCollab.addEventListener("submit", event => event.preventDefault());
 
-$input.addEventListener("focus", focusAndBlur);
-$input.addEventListener("blur", focusAndBlur);
+// $input.addEventListener("focus", focusAndBlur);
+// $input.addEventListener("blur", focusAndBlur);
 
 
 /* 
@@ -64,36 +64,36 @@ $input.addEventListener("blur", focusAndBlur);
 */
 
 
-$input.addEventListener("keyup", event => {
-    event.preventDefault();
+// $input.addEventListener("keyup", event => {
+//     event.preventDefault();
 
-    const {
-        keyCode
-    } = event;
-    const keys = {
-        13: "ENTER"
-    };
+//     const {
+//         keyCode
+//     } = event;
+//     const keys = {
+//         13: "ENTER"
+//     };
 
-    if (keys[keyCode] === "ENTER") {
-        const {
-            value
-        } = $input;
+//     if (keys[keyCode] === "ENTER") {
+//         const {
+//             value
+//         } = $input;
 
-        $tags.prepend(newTag(value));
+//         $tags.prepend(newTag(value));
 
-        $input.value = "";
-    }
-});
+//         $input.value = "";
+//     }
+// });
 
-$tags.addEventListener("click", event => {
-    const {
-        target
-    } = event;
+// $tags.addEventListener("click", event => {
+//     const {
+//         target
+//     } = event;
 
-    if (target.classList.contains("remove")) {
-        const $wrapTag = target.closest(".wrapTag");
+//     if (target.classList.contains("remove")) {
+//         const $wrapTag = target.closest(".wrapTag");
 
-        $wrapTag.classList.add("-remove");
-        $wrapTag.addEventListener("transitionend", () => $wrapTag.remove());
-    }
-});
+//         $wrapTag.classList.add("-remove");
+//         $wrapTag.addEventListener("transitionend", () => $wrapTag.remove());
+//     }
+// });
