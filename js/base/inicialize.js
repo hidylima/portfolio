@@ -3,7 +3,11 @@
 // Verificar a distância entre o alvo e o topo
 // Animar o scroll até o alvo
 
-const menuItems = document.querySelectorAll('.main-nav a[href^="#"]');
+const menuItems = document.querySelectorAll('.main-header a[href^="#"]');
+
+menuItems.forEach(item => {
+	item.addEventListener('click', scrollToIdOnClick);
+});
 
 function getScrollTopByHref(element) {
   const id = element.getAttribute('href');
@@ -11,12 +15,7 @@ function getScrollTopByHref(element) {
 }
 
 function scrollToPosition(to) {
-  // Caso queira o nativo apenas
-	// window.scroll({
-	// top: to,
-	// behavior: "smooth",
-	// })
-  smoothScrollTo(800, to);
+  smoothScrollTo(2500, to);
 }
 
 function scrollToIdOnClick(event) {
@@ -25,9 +24,7 @@ function scrollToIdOnClick(event) {
 	scrollToPosition(to);
 }
 
-menuItems.forEach(item => {
-	item.addEventListener('click', scrollToIdOnClick);
-});
+
 
 // Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
 /**
@@ -43,7 +40,7 @@ function smoothScrollTo(endX, endY, duration) {
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
 
-  duration = typeof duration !== 'undefined' ? duration : 1000;
+  duration = typeof duration !== 'undefined' ? duration : 2000;
 
   // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
@@ -61,3 +58,40 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
+
+// function smoothScroll(target, duration) {
+//   var target = document.querySelector(target);
+//   var targetPosition = target.getBoundingClientRect().top;
+//   var startPosition = window.pageYOffset;
+//   var distance = targetPosition - startPosition;
+//   var startTime = null;
+//   console.log(startPosition)
+
+//   function animation(currentTime) {
+//     if (startTime === null) {
+//       startTime = currentTime;
+//     }
+//     var timeElapsed = currentTime - startTime;
+//     var run = ease(timeElapsed, startPosition, distance, duration);
+//     window.screenTop(a, run);
+//     if (timeElapsed < duration) {
+//       requestAnimationFrame(animation);
+//     }
+//   }
+
+//   function ease(t, b, c, d) {
+//     t /= d / 2;
+//     if (t < 1) {
+//       return c / 2 * t * t * b;
+//     }
+//     t--;
+//     return -c / 2 * (t * (t - 2) - 1) + b;
+//   }
+
+//   requestAnimationFrame(animation);
+// }
+
+// var scrollSection = document.querySelector('.main-header a[href^="#"]');
+// scrollSection.addEventListener('cllick', function () {
+//   smoothScroll('.main-header a[href^="#"]', 1000);
+// });
