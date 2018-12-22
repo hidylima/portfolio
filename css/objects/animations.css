@@ -2,7 +2,7 @@
 
 [data-anime] {
     opacity: 0;
-    transition: .3s;
+    transition: .5s;
 }
 
 [data-anime="left"] {
@@ -15,6 +15,10 @@
 
 [data-anime="top"] {
     transform: translate3d(0, -50px, 0);
+}
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+    
 }
 
 [data-anime].-animate {

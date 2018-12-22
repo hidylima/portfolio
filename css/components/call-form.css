@@ -6,8 +6,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 20px 5% 80px;
-    position: relative;
-    z-index: 1;
 }
 
 .call-form .title {

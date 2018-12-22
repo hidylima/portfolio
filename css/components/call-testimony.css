@@ -6,8 +6,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 60px 5% 40px 5%;
-    position: relative; 
-    z-index: 1;
 }
 .call-testimony .title {
     font-size: 3rem;
