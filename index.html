@@ -58,14 +58,7 @@
 
     <!-- CSS E Fontes -->
     <link rel="shortcut icon" href="favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 
     <link
       href="https://fonts.googleapis.com/css?family=Lobster"
@@ -78,6 +71,7 @@
     <link rel="stylesheet" href="css/base/style.css" />
 
     <link rel="stylesheet" href="css/objects/container.css" />
+    <link rel="stylesheet" href="css/objects/animations.css" />
 
     <link rel="stylesheet" href="css/components/main-header.css" />
     <link rel="stylesheet" href="css/components/main-logo.css" />
@@ -128,14 +122,14 @@
 
     <section class="wrap-featured ">
       <header class="wrapper">
-        <h1 class="title ">Desenvolvimento de websites dinâmicos e responsivos!</h1>
+        <h1 class="title ">Desenvolvimento de website!</h1>
         <h2 class="subtitle"> Site Institucional / Site Pessoal / Landing Page / Portais</h2>
       </header>
     </section>
 
     <section id="service" class="wrap-service">
       <div class="card-service -service">
-        <dl class="item">
+        <dl class="item" data-anime="left">
           <dt class="title">Criação de Sites</dt>
           <dd class="description">
             Criação de sites responsivos que se adaptam a qualquer dispositivo e
@@ -149,7 +143,7 @@
       </div>
 
       <div class="card-service">
-        <dl class="item -item">
+        <dl class="item -item" data-anime="left">
           <dd class="logo">
             <img src="img/webdesigne.png" alt="Logo da webcoder" />
           </dd>
@@ -160,7 +154,7 @@
             serviços na internet a novos clientes e aumentando seus lucros.
           </dd>
         </dl>
-        <dl class="item -item">
+        <dl class="item -item " data-anime="right">
           <dd class="logo">
             <img src="img/photography.png" alt="Logo da webcoder" />
           </dd>
@@ -172,7 +166,7 @@
           </dd>
         </dl>
 
-        <dl class="item -item">
+        <dl class="item -item" data-anime="left">
           <dd class="logo">
             <img src="img/videosgraphy.png" alt="Logo da webcoder" />
           </dd>
@@ -183,7 +177,7 @@
           </dd>
         </dl>
 
-        <dl class="item -item">
+        <dl class="item -item" data-anime="right">
           <dd class="logo">
             <img src="img/webcoder.png" alt="Logo da webcoder" />
           </dd>
@@ -564,6 +558,7 @@
       </div>
     </footer>
     <script src="js/base/inicialize.js" async defer></script>
+    <script src="js/objects/animations.js" async defer></script>
     <script src="js/components/main-header.js" async defer></script>
     <script src="js/components/wrap-featured.js" async defer></script>
   </body>
